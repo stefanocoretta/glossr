@@ -1,15 +1,15 @@
 ---
 title: "Example gloss"
-output: 
-  pdf_document: 
+output:
+  pdf_document:
     number_sections: yes
     latex_engine: xelatex
     keep_tex: yes
-    template: template.tex
-    keep_md: true
+    template: template.tex # TODO: will need to include it in the package?
+    keep_md: yes
 header-includes:
-  - \usepackage{expex}
-  - \lingset{everygla=,everyglpreamble=\it}
+- \usepackage{expex}
+- \lingset{everygla=,everyglpreamble=\it}
 ---
 
 

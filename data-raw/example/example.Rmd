@@ -5,7 +5,7 @@ output:
     number_sections: yes
     latex_engine: xelatex
     keep_tex: yes
-    template: template.tex
+    template: template.tex # TODO: will need to include it in the package?
     keep_md: yes
 header-includes:
 - \usepackage{expex}
@@ -14,13 +14,14 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = here::here())
 library(glossr)
 ```
 
 # This is a gloss
 
 ```{r this, echo=FALSE}
-this <- read_sentence("~/repos/glossr/inst/extdata/", "example")
+this <- read_sentence("./data-raw/example", "example")
 ```
 
 This is just a gloss to show what glossr can do.
