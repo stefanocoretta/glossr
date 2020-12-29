@@ -1,0 +1,28 @@
+---
+title: "Example gloss"
+output:
+  pdf_document:
+    number_sections: yes
+    latex_engine: xelatex
+    keep_tex: yes
+    template: template.tex
+    keep_md: yes
+header-includes:
+- \usepackage{expex}
+- \lingset{everygla=,everyglpreamble=\it}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(glossr)
+```
+
+# This is a gloss
+
+```{r this, echo=FALSE}
+this <- read_sentence("~/repos/glossr/inst/extdata/", "example")
+```
+
+This is just a gloss to show what glossr can do.
+
+`r include_gloss(this)`
