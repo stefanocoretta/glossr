@@ -1,0 +1,19 @@
+---
+name: "examples"
+type: "text"
+collection: "leipzig"
+sentences:
+  - "001":
+    spell: "Gila aburun ferma hamišaluǧ güǧüna amuq'dač."
+    parsed: ["gila", "abur-u-n", "ferma", "hamišaluǧ", "güǧüna", "amuq'-da-č"]
+    gloss: ["now", "they-OBL-GEN", "farm", "forever", "behind", "stay-FUT-NEG"]
+    tr: "Now their farm will not stay behind forever."
+    lang: "Lezgian"
+    source: "Haspelmath 1993:207"
+  - "002":
+    parsed: ["oz#-di-g", "xõxe", "m-uq'e-r"]
+    gloss: ["boy-OBL-AD", "tree(G4)", "G4-bend-PRET"]
+    tr: "Because of the boy the tree bent."
+    lang: "Hunzib"
+    source: "van den Berg 1995:46"
+
